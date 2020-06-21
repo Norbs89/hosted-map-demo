@@ -1,0 +1,61 @@
+.city-page-div {
+  height: 100vh;
+  margin: 0;
+  background: url("../Backgrounds/landing-page.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.city-page-content {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.city-container {
+  font-family: "Staatliches", cursive;
+  max-width: 50%;
+  padding: 2em 0;
+  background-color: #c3cdd3ca;
+  border-radius: 1em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.city-container p {
+  font-size: 1.1em;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.city-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.city-button {
+  width: 40%;
+  margin: 0.3em;
+}
+
+@media (max-width: 600px) {
+  .city-container {
+    font-size: 0.8em;
+    max-width: 70%;
+    padding: 1em 0;
+  }
+
+  .city-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .city-button {
+    margin: 0.5em;
+    padding: 0;
+    letter-spacing: 0.05em;
+    line-height: 3.15em;
+    width: 50%;
+  }
+}
