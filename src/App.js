@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./Components/HomePage";
@@ -11,10 +11,13 @@ import PageAbout from "./Components/PageAbout";
 import ProjectAbout from "./Components/ProjectAbout";
 import Contact from "./Components/ContactForm";
 import { Router } from "@reach/router";
+import { Spring } from "react-spring/renderprops";
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component {
+  state = {};
+
+  render() {
+    return (
       <Router>
         <HomePage path="/" />
         <ArtistPage path="/:artist" />
@@ -26,8 +29,8 @@ function App() {
         <ProjectAbout path="/:artist/:project" />
         <Contact path="/contact" />
       </Router>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

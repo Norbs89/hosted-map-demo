@@ -1,16 +1,12 @@
 .home-page-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
   background: url("../Backgrounds/landing-page.jpg") no-repeat center center
     fixed;
   background-size: cover;
 }
 
 .all-content {
+  margin-top: 3em;
   font-family: "Staatliches", cursive;
   max-width: 70%;
   padding: 5em 2em;
@@ -19,17 +15,35 @@
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+.home-header-row,
+.home-desc-row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .all-content p {
   font-size: 1.1em;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
 }
 
+.home-button-row {
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 600px) {
   .all-content {
+    margin-top: 4em;
     font-size: 0.8em;
     max-width: 70%;
     padding: 1em 0;
+  }
+
+  .all-content p {
+    max-width: 80%;
+    font-size: 0.8em;
   }
 
   .button {

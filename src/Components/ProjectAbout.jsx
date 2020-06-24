@@ -4,6 +4,7 @@ import DisplayNavbar from "./Navbar";
 import { Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import "../Styles/ProjectAbout.css";
+import { Spring } from "react-spring/renderprops";
 
 const ProjectAbout = ({ artist, project }) => {
   let currentProject = artists[artist].projects[project];
@@ -14,34 +15,44 @@ const ProjectAbout = ({ artist, project }) => {
         customPath={"/globalmap"}
         customPathName={"Planetary View"}
       />
-      <Container className="project-container">
-        <Row className="project-header">
-          <h2>{currentProject.projectName}</h2>
-        </Row>
-        <Row className="img-row">
-          <Image
-            className="project-pic"
-            src={currentProject.pic1}
-            thumbnail
-            fluid
-          />
-          <Image
-            className="project-pic"
-            src={currentProject.pic2}
-            thumbnail
-            fluid
-          />
-          <Image
-            className="project-pic"
-            src={currentProject.pic3}
-            thumbnail
-            fluid
-          />
-        </Row>
-        <Row className="project-desc">
-          <article>{currentProject.desc}</article>
-        </Row>
-      </Container>
+      <Spring
+        from={{ opacity: 0, marginTop: -500 }}
+        to={{ opacity: 1, marginTop: 0 }}
+        config={{ delay: 200 }}
+      >
+        {(props) => (
+          <div style={props}>
+            <Container className="project-container">
+              <Row className="project-header">
+                <h2>{currentProject.projectName}</h2>
+              </Row>
+              <Row className="img-row">
+                <Image
+                  className="project-pic"
+                  src={currentProject.pic1}
+                  thumbnail
+                  fluid
+                />
+                <Image
+                  className="project-pic"
+                  src={currentProject.pic2}
+                  thumbnail
+                  fluid
+                />
+                <Image
+                  className="project-pic"
+                  src={currentProject.pic3}
+                  thumbnail
+                  fluid
+                />
+              </Row>
+              <Row className="project-desc">
+                <article>{currentProject.desc}</article>
+              </Row>
+            </Container>
+          </div>
+        )}
+      </Spring>
     </div>
   );
 };
