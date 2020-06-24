@@ -28,7 +28,9 @@ const HomePage = () => {
             <Link to="/pickcity">
               <button className="button">Pick A City</button>
             </Link>
-            <button className="button">About The Project</button>
+            <Link to="/about">
+              <button className="button">About The Project</button>
+            </Link>
           </Col>
         </Row>
       </Container>

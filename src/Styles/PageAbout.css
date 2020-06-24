@@ -1,0 +1,50 @@
+.about-main-div {
+  min-height: 100vh;
+  background: url("../Backgrounds/landing-page.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+}
+
+.about-container {
+  margin-top: 3em;
+  font-family: "Nunito", cursive;
+  max-width: 60%;
+  padding: 0;
+  background-color: #e7ecf0da;
+  border-radius: 1em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.about-header-row {
+  margin: 0;
+  margin-bottom: 0.1em;
+  border-radius: 1rem 1rem 0 0;
+  color: #eceae5;
+  font-family: "Staatliches", cursive;
+  font-size: 10em;
+  padding: 0.1em;
+  background-color: #0b4f6c83;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 5px #080708;
+}
+
+.about-row {
+  margin-top: 1.5em;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.icon-row {
+  justify-content: center;
+  padding: 1em;
+}
+.icon {
+  font-size: 2em;
+  color: #0b4f6c83;
+  padding: 0 1em;
+}
+
+.icon:hover {
+  color: #0b4f6cef;
+}

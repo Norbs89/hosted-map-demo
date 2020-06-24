@@ -1,13 +1,14 @@
 import React from "react";
 import "../Styles/ArtistPage.css";
 import DisplayNavbar from "./Navbar";
-import { Container, Row, Col } from "react-bootstrap";
+import { artists } from "../artistData.js";
+import ArtistCard from "./ArtistCard";
 
 const ArtistPage = ({ artist }) => {
   return (
     <>
       <DisplayNavbar
-        backPath={"/pickcity"}
+        backPath={`/city/${artists[artist].city}`}
         customPath={"/globalmap"}
         customPathName={"Planetary View"}
       />
@@ -17,24 +18,12 @@ const ArtistPage = ({ artist }) => {
           className="background-map"
           width="100%"
           height="100%"
-          src="https://maphub.net/embed/99003?button=0"
+          src={artists[artist].map}
         ></iframe>
-        <section className="artist-info">
-          <Container className="artist-info-container">
-            <Row>
-              <Col>
-                Click on the marker to discover a local artist and their work!
-              </Col>
-            </Row>
-          </Container>
-        </section>
+        <ArtistCard artist={artist} />
       </div>
     </>
   );
-};
-
-const print = (item) => {
-  console.log(item);
 };
 
 export default ArtistPage;

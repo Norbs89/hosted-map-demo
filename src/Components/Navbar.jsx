@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Navbar.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import { Link } from "@reach/router";
 
 const DisplayNavbar = ({ backPath, customPath, customPathName }) => {
@@ -25,6 +25,11 @@ const DisplayNavbar = ({ backPath, customPath, customPathName }) => {
       <Navbar.Text className="d-none d-lg-inline d-md-inline">
         <Link to="/about" className="nav-text">
           about
+        </Link>
+      </Navbar.Text>
+      <Navbar.Text className="d-none d-lg-inline d-md-inline">
+        <Link to="/contact" className="nav-text">
+          contact us
         </Link>
       </Navbar.Text>
       <Navbar.Text>

@@ -24,7 +24,8 @@ const CityMap = ({ city }) => {
           <Container className="city-info-container">
             <Row>
               <Col>
-                Click on the marker to discover a local artist and their work!
+                Click on the marker to discover a local artist from
+                <span className="city"> {city}</span> and check out their work!
               </Col>
             </Row>
           </Container>

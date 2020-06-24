@@ -3,6 +3,7 @@ const artists = {
     name: "Neil Artist",
     city: "manchester",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Narwhal roof party coloring book tbh synth DIY snackwave succulents pickled pinterest authentic hashtag XOXO. Chambray keytar scenester, microdosing coloring book mlkshk drinking vinegar venmo listicle ethical. Lo-fi kombucha bushwick XOXO single-origin coffee yuccie offal poutine raclette art party. Cornhole hashtag YOLO, stumptown deep v swag vaporware humblebrag copper mug small batch squid echo park health goth leggings shabby chic. Farm-to-table shabby chic cronut, chicharrones enamel pin leggings vinyl schlitz craft beer put a bird on it quinoa la croix actually. You probably haven't heard of them beard try-hard, vape everyday carry glossier neutra street art pok pok VHS listicle fanny pack drinking vinegar retro. Lumbersexual photo booth butcher, church-key sustainable roof party mustache pug swag. Thundercats lumbersexual ramps tbh. Pok pok normcore raw denim venmo tumblr before they sold out. Wolf lumbersexual YOLO vape.",
     projects: {
@@ -34,12 +35,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   carla: {
     name: "Carla Artist",
     city: "manchester",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "I'm baby forage fam neutra chartreuse, butcher banjo poke artisan fanny pack VHS kale chips ugh pop-up offal beard. Scenester humblebrag tbh, narwhal polaroid skateboard man bun artisan williamsburg twee direct trade YOLO paleo pop-up. Photo booth iPhone whatever selvage scenester narwhal seitan vinyl hexagon master cleanse. Ethical organic before they sold out umami. Kitsch palo santo pok pok, biodiesel vegan shoreditch cray live-edge kogi intelligentsia listicle. Brooklyn hashtag paleo gastropub trust fund authentic. 3 wolf moon chambray meggings blog waistcoat taiyaki gochujang church-key vinyl swag try-hard. Tilde bitters pour-over whatever coloring book, banjo gentrify 3 wolf moon adaptogen shaman shabby chic. Food truck 90's brunch whatever. IPhone palo santo lomo messenger bag slow-carb heirloom. Pop-up wolf etsy banh mi, chia DIY roof party af quinoa.",
     projects: {
@@ -71,12 +73,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   jess: {
     name: "Jess Artist",
     city: "liverpool",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Narwhal roof party coloring book tbh synth DIY snackwave succulents pickled pinterest authentic hashtag XOXO. Chambray keytar scenester, microdosing coloring book mlkshk drinking vinegar venmo listicle ethical. Lo-fi kombucha bushwick XOXO single-origin coffee yuccie offal poutine raclette art party. Cornhole hashtag YOLO, stumptown deep v swag vaporware humblebrag copper mug small batch squid echo park health goth leggings shabby chic. Farm-to-table shabby chic cronut, chicharrones enamel pin leggings vinyl schlitz craft beer put a bird on it quinoa la croix actually. You probably haven't heard of them beard try-hard, vape everyday carry glossier neutra street art pok pok VHS listicle fanny pack drinking vinegar retro. Lumbersexual photo booth butcher, church-key sustainable roof party mustache pug swag. Thundercats lumbersexual ramps tbh. Pok pok normcore raw denim venmo tumblr before they sold out. Wolf lumbersexual YOLO vape.",
     projects: {
@@ -108,12 +111,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   john: {
     name: "John Artist",
     city: "liverpool",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Bespoke hexagon cornhole, aesthetic mumblecore coloring book drinking vinegar. Lyft stumptown cloud bread, la croix banjo kickstarter kombucha. Hexagon four loko authentic copper mug kinfolk, enamel pin +1 viral seitan artisan shabby chic squid iceland. Prism VHS live-edge, chicharrones synth palo santo hashtag beard. Craft beer knausgaard gluten-free helvetica cloud bread tacos kombucha. Poutine kale chips ramps selvage gochujang mixtape. Whatever unicorn copper mug, raclette shabby chic tbh leggings lyft brooklyn godard.",
     projects: {
@@ -145,12 +149,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   chris: {
     name: "Chris Artist",
     city: "newcastle",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Bespoke hexagon cornhole, aesthetic mumblecore coloring book drinking vinegar. Lyft stumptown cloud bread, la croix banjo kickstarter kombucha. Hexagon four loko authentic copper mug kinfolk, enamel pin +1 viral seitan artisan shabby chic squid iceland. Prism VHS live-edge, chicharrones synth palo santo hashtag beard. Craft beer knausgaard gluten-free helvetica cloud bread tacos kombucha. Poutine kale chips ramps selvage gochujang mixtape. Whatever unicorn copper mug, raclette shabby chic tbh leggings lyft brooklyn godard.",
     projects: {
@@ -182,12 +187,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   maya: {
     name: "Maya Artist",
     city: "newcastle",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Bespoke hexagon cornhole, aesthetic mumblecore coloring book drinking vinegar. Lyft stumptown cloud bread, la croix banjo kickstarter kombucha. Hexagon four loko authentic copper mug kinfolk, enamel pin +1 viral seitan artisan shabby chic squid iceland. Prism VHS live-edge, chicharrones synth palo santo hashtag beard. Craft beer knausgaard gluten-free helvetica cloud bread tacos kombucha. Poutine kale chips ramps selvage gochujang mixtape. Whatever unicorn copper mug, raclette shabby chic tbh leggings lyft brooklyn godard.",
     projects: {
@@ -219,12 +225,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   pablo: {
     name: "Pablo Artist",
     city: "london",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "I'm baby forage fam neutra chartreuse, butcher banjo poke artisan fanny pack VHS kale chips ugh pop-up offal beard. Scenester humblebrag tbh, narwhal polaroid skateboard man bun artisan williamsburg twee direct trade YOLO paleo pop-up. Photo booth iPhone whatever selvage scenester narwhal seitan vinyl hexagon master cleanse. Ethical organic before they sold out umami. Kitsch palo santo pok pok, biodiesel vegan shoreditch cray live-edge kogi intelligentsia listicle. Brooklyn hashtag paleo gastropub trust fund authentic. 3 wolf moon chambray meggings blog waistcoat taiyaki gochujang church-key vinyl swag try-hard. Tilde bitters pour-over whatever coloring book, banjo gentrify 3 wolf moon adaptogen shaman shabby chic. Food truck 90's brunch whatever. IPhone palo santo lomo messenger bag slow-carb heirloom. Pop-up wolf etsy banh mi, chia DIY roof party af quinoa.",
     projects: {
@@ -256,12 +263,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   robert: {
     name: "Robert Artist",
     city: "london",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Narwhal roof party coloring book tbh synth DIY snackwave succulents pickled pinterest authentic hashtag XOXO. Chambray keytar scenester, microdosing coloring book mlkshk drinking vinegar venmo listicle ethical. Lo-fi kombucha bushwick XOXO single-origin coffee yuccie offal poutine raclette art party. Cornhole hashtag YOLO, stumptown deep v swag vaporware humblebrag copper mug small batch squid echo park health goth leggings shabby chic. Farm-to-table shabby chic cronut, chicharrones enamel pin leggings vinyl schlitz craft beer put a bird on it quinoa la croix actually. You probably haven't heard of them beard try-hard, vape everyday carry glossier neutra street art pok pok VHS listicle fanny pack drinking vinegar retro. Lumbersexual photo booth butcher, church-key sustainable roof party mustache pug swag. Thundercats lumbersexual ramps tbh. Pok pok normcore raw denim venmo tumblr before they sold out. Wolf lumbersexual YOLO vape.",
     projects: {
@@ -293,12 +301,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   leah: {
     name: "Leah Artist",
     city: "birmingham",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Narwhal roof party coloring book tbh synth DIY snackwave succulents pickled pinterest authentic hashtag XOXO. Chambray keytar scenester, microdosing coloring book mlkshk drinking vinegar venmo listicle ethical. Lo-fi kombucha bushwick XOXO single-origin coffee yuccie offal poutine raclette art party. Cornhole hashtag YOLO, stumptown deep v swag vaporware humblebrag copper mug small batch squid echo park health goth leggings shabby chic. Farm-to-table shabby chic cronut, chicharrones enamel pin leggings vinyl schlitz craft beer put a bird on it quinoa la croix actually. You probably haven't heard of them beard try-hard, vape everyday carry glossier neutra street art pok pok VHS listicle fanny pack drinking vinegar retro. Lumbersexual photo booth butcher, church-key sustainable roof party mustache pug swag. Thundercats lumbersexual ramps tbh. Pok pok normcore raw denim venmo tumblr before they sold out. Wolf lumbersexual YOLO vape.",
     projects: {
@@ -330,12 +339,13 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
   roger: {
     name: "Roger Artist",
     city: "birmingham",
     map: "https://maphub.net/embed/99003?button=0",
+    profilePic: "http://placeimg.com/500/500/any",
     bio:
       "Bespoke hexagon cornhole, aesthetic mumblecore coloring book drinking vinegar. Lyft stumptown cloud bread, la croix banjo kickstarter kombucha. Hexagon four loko authentic copper mug kinfolk, enamel pin +1 viral seitan artisan shabby chic squid iceland. Prism VHS live-edge, chicharrones synth palo santo hashtag beard. Craft beer knausgaard gluten-free helvetica cloud bread tacos kombucha. Poutine kale chips ramps selvage gochujang mixtape. Whatever unicorn copper mug, raclette shabby chic tbh leggings lyft brooklyn godard.",
     projects: {
@@ -367,7 +377,7 @@ const artists = {
         video: "",
       },
     },
-    link: "",
+    link: "https://google.com",
   },
 };
 
@@ -376,23 +386,18 @@ const cities = ["manchester", "london", "birmingham", "liverpool", "newcastle"];
 const maps = {
   manchester: {
     map: "https://maphub.net/embed/99003?button=0",
-    background: "./Backgrounds/manchester.jpg",
   },
   london: {
     map: "https://maphub.net/embed/99003?button=0",
-    background: "./Backgrounds/manchester.jpg",
   },
   birmingham: {
     map: "https://maphub.net/embed/99003?button=0",
-    background: "./Backgrounds/manchester.jpg",
   },
   liverpool: {
     map: "https://maphub.net/embed/99003?button=0",
-    background: "./Backgrounds/manchester.jpg",
   },
   newcastle: {
     map: "https://maphub.net/embed/99003?button=0",
-    background: "./Backgrounds/manchester.jpg",
   },
 };
 
