@@ -12,64 +12,96 @@ class Contact extends Component {
     name: "",
     message: "",
     email: "",
+    formFile: "",
     sent: false,
-    buttonText: "Send Message",
   };
 
   render() {
     return (
       <div className="contact-main-div">
         {" "}
-        <DisplayNavbar
-          backPath={`/`}
-          customPath={"/globalmap"}
-          customPathName={"Planetary View"}
-        />
+        <DisplayNavbar />
         <Spring
-          from={{ opacity: 0, marginTop: -500 }}
-          to={{ opacity: 1, marginTop: 0 }}
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
           config={{ delay: 200 }}
         >
           {(props) => (
-            <div style={props}>
+            <div style={props} className="contact-outer-div">
               <Container className="contact-container">
                 <Row className="contact-header-row">
-                  <h2>Contact Form</h2>
+                  <h2>Your View</h2>
                 </Row>
-                <Row className="contact-desc-row">
-                  <article>
-                    If you have any questions, concerns or you would like to get
-                    featured as an artist on our website, please fill out our
-                    contact form and we will get back to you soon!
-                  </article>
+                <Row className="col-row">
+                  <Col className="instructions-col">
+                    <article>
+                      Kinfolk cornhole hoodie gluten-free. Forage +1 next level,
+                      occupy narwhal selfies drinking vinegar deep v viral
+                      disrupt taxidermy lo-fi. Palo santo poutine green juice
+                      taxidermy photo booth intelligentsia. Coloring book
+                      literally succulents pug asymmetrical taiyaki etsy
+                      adaptogen vexillologist tote bag fashion axe gluten-free
+                      banh mi. Single-origin coffee aesthetic readymade irony
+                      roof party, fanny pack fashion axe church-key cold-pressed
+                      glossier green juice chartreuse. Lomo single-origin coffee
+                      adaptogen sartorial polaroid jianbing kinfolk ugh
+                      wayfarers cornhole 3 wolf moon.
+                    </article>
+                    <Row className="contact-button-row download">
+                      <a
+                        href="https://github.com/conwayhub/markertests/raw/master/Markersheet.pdf"
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Download instructions
+                      </a>
+                    </Row>
+                  </Col>
+                  <Col className="form-col">
+                    <article>
+                      If you have any questions, concerns or you would like to
+                      get featured as an artist on our website, please fill out
+                      our contact form and we will get back to you soon!
+                    </article>
+                    <Form className="contact-form">
+                      <Form.Group controlId="formGroupName">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control
+                          as="textarea"
+                          rows="1"
+                          placeholder="Enter your name here..."
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formGroupEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control
+                          type="email"
+                          placeholder="name@example.com"
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formGroupMessage">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control
+                          as="textarea"
+                          rows="4"
+                          placeholder="Enter your message here..."
+                        />
+                      </Form.Group>
+                      <Form.Group>
+                        <Form.File
+                          id="FormFile"
+                          label="Upload a JPEG picture here:"
+                        />
+                      </Form.Group>
+                      <Row className="contact-button-row">
+                        <button className="button" type="submit">
+                          Submit
+                        </button>
+                      </Row>
+                    </Form>
+                  </Col>
                 </Row>
-                <Form className="contact-form">
-                  <Form.Group controlId="formGroupName">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      rows="1"
-                      placeholder="Enter your name here..."
-                    />
-                  </Form.Group>
-                  <Form.Group controlId="formGroupEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="name@example.com" />
-                  </Form.Group>
-                  <Form.Group controlId="formGroupMessage">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control
-                      as="textarea"
-                      rows="3"
-                      placeholder="Enter your message here..."
-                    />
-                  </Form.Group>
-                  <Row className="contact-button-row">
-                    <button className="button" type="submit">
-                      Submit
-                    </button>
-                  </Row>
-                </Form>
               </Container>
             </div>
           )}

@@ -1,28 +1,3 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0.7;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.7;
-  }
-}
-
-.is-exiting {
-  animation-name: fadeOut;
-  animation-duration: 1s;
-}
-/* 
 .App {
-  height: 100vh;
-} */
+  font-family: "Roboto", sans-serif;
+}

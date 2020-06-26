@@ -1,23 +1,13 @@
 import React from "react";
 import { Link } from "@reach/router";
 import "../Styles/HomePage.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Spring } from "react-spring/renderprops";
-import DisplayNavbar from "./Navbar";
 
 const HomePage = () => {
   return (
     <div className="home-page-div">
-      <DisplayNavbar
-        backPath={`/`}
-        customPath={"/globalmap"}
-        customPathName={"Planetary View"}
-      />
-      <Spring
-        from={{ opacity: 0, marginTop: -500 }}
-        to={{ opacity: 1, marginTop: 0 }}
-        config={{ delay: 200 }}
-      >
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
         {(props) => (
           <div style={props}>
             <Container className="all-content">
@@ -35,14 +25,14 @@ const HomePage = () => {
                 </p>
               </Row>
               <Row className="home-button-row">
+                <Link to="/pickcity">
+                  <button className="button">Project View</button>
+                </Link>
                 <Link to="/globalmap">
                   <button className="button">Planetary View</button>
                 </Link>
-                <Link to="/pickcity">
-                  <button className="button">Pick A City</button>
-                </Link>
-                <Link to="/about">
-                  <button className="button">About The Project</button>
+                <Link to="/contact">
+                  <button className="button">Your View</button>
                 </Link>
               </Row>
             </Container>

@@ -6,12 +6,8 @@ import ArtistCard from "./ArtistCard";
 
 const ArtistPage = ({ artist }) => {
   return (
-    <>
-      <DisplayNavbar
-        backPath={`/city/${artists[artist].city}`}
-        customPath={"/globalmap"}
-        customPathName={"Planetary View"}
-      />
+    <div className="artist-page">
+      <DisplayNavbar />
       <div className="artist-main-div">
         <iframe
           title="planet-map"
@@ -22,7 +18,7 @@ const ArtistPage = ({ artist }) => {
         ></iframe>
         <ArtistCard artist={artist} />
       </div>
-    </>
+    </div>
   );
 };
 

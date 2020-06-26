@@ -3,42 +3,45 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "@reach/router";
 import DisplayNavbar from "./Navbar";
 import "../Styles/PickCity.css";
-import { cities } from "../artistData.js";
+import { cities, artistArray } from "../artistData.js";
+import { findArtist } from "../utils";
+import { Spring } from "react-spring/renderprops";
 
 const PickCity = () => {
   return (
     <div className="city-page-div">
-      <DisplayNavbar
-        backPath={"/"}
-        customPath={"/globalmap"}
-        customPathName={"Planetary View"}
-      />
-      <section className="city-page-content">
-        <Container className="city-container">
-          <Row>
-            <Col>
-              <h2>
-                Pick a city to discover the works of our amazing local artists!
-              </h2>
-              <p> Or hit the 'random' button to check out a random artist!</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="city-buttons">
-              {cities.map((city) => {
-                return (
-                  <Link key={city} to={`/city/${city}`}>
-                    <button className="button city-button">{city}</button>
+      <DisplayNavbar />
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
+        {(props) => (
+          <div style={props} className="city-page-content">
+            <Container className="city-container">
+              <Row>
+                <Col>
+                  <h2>
+                    Pick a city to discover the works of our amazing local
+                    artists!
+                  </h2>
+                  <p> Or hit the 'start' button to go through all artists!</p>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="city-buttons">
+                  <Link to={`/${artistArray[0]}`}>
+                    <button className="button city-button">start</button>
                   </Link>
-                );
-              })}
-              <Link to={`/`}>
-                <button className="button city-button">random</button>
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+                  {cities.map((city) => {
+                    return (
+                      <Link key={city} to={`/${findArtist(city)}`}>
+                        <button className="button city-button">{city}</button>
+                      </Link>
+                    );
+                  })}
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        )}
+      </Spring>
     </div>
   );
 };

@@ -10,31 +10,6 @@
   z-index: -1;
 }
 
-.planetary {
-  margin: 0;
-  background: url("../Backgrounds/landing-page.jpg") no-repeat center center
-    fixed;
-  background-size: cover;
-}
-
-.planet-main-div {
-  float: left;
-}
-
-.planet-info {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.planet-info-container {
-  font-family: "Nunito", cursive;
-  font-weight: 700;
-  max-width: 50%;
-  padding: 1em 0;
-  background-color: #c3cdd3ca;
-  border-radius: 1em;
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+.next-button {
+  display: none;
 }

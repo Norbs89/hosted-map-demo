@@ -1,25 +1,18 @@
 import React from "react";
 import DisplayNavbar from "./Navbar";
 import { Container, Row } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
 import "../Styles/PageAbout.css";
 import { Spring } from "react-spring/renderprops";
 
 const PageAbout = () => {
   return (
     <div className="about-main-div">
-      <DisplayNavbar
-        backPath={`/`}
-        customPath={"/globalmap"}
-        customPathName={"Planetary View"}
-      />
-      <Spring
-        from={{ opacity: 0, marginTop: -500 }}
-        to={{ opacity: 1, marginTop: 0 }}
-        config={{ delay: 200 }}
-      >
+      <DisplayNavbar />
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
         {(props) => (
-          <div style={props}>
-            <Container className="about-container">
+          <div style={props} className="about-container">
+            <Container className="about-inner-container">
               <Row className="about-header-row">
                 <h2>About The Project</h2>
               </Row>
@@ -75,6 +68,14 @@ const PageAbout = () => {
                 >
                   <i class="fab fa-linkedin"></i>
                 </a>
+              </Row>
+              <Row className="about-pic-row">
+                <Image
+                  className="about-pic"
+                  src="http://placeimg.com/500/500/any"
+                  thumbnail
+                  fluid
+                />
               </Row>
             </Container>
           </div>

@@ -1,49 +1,67 @@
 .project-main-div {
   min-height: 100vh;
-  background: url("../Backgrounds/landing-page.jpg") no-repeat center center
-    fixed;
+  background: url("../Backgrounds/background.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+.project-outer-div {
+  height: 100%;
+  padding-bottom: 1em;
 }
 
 .project-container {
-  margin-top: 1em;
-  padding-left: 0;
-  padding-right: 0;
-  font-family: "Nunito", cursive;
+  margin-top: 2em;
+  padding-bottom: 1em;
   max-width: 60%;
-  background-color: #e7ecf0da;
-  border-radius: 1em;
+  color: #e2ebf0;
+  background-color: #171718dc;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .project-header {
-  margin: 0;
-  margin-bottom: 0.1em;
-  border-radius: 1rem 1rem 0 0;
-  color: #eceae5;
-  font-family: "Staatliches", cursive;
   font-size: 10em;
-  padding: 0.1em;
-  background-color: #0b4f6c83;
+  padding: 1rem 0;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 0 5px #080708;
+  text-transform: uppercase;
 }
 
-.img-row {
-  justify-content: space-evenly;
+.img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-pic {
-  max-width: 30%;
+  max-width: 80%;
+  margin: 1rem 0;
 }
 
 .project-desc {
-  color: #eceae5;
   margin: auto;
   margin-top: 1em;
   padding: 1em;
   text-align: center;
-  background-color: #0b4f6c83;
-  border-radius: 0 0 1rem 1rem;
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+
+  .project-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-vid {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-vid {
+    max-width: 80%;
+    height: auto;
+  }
 }

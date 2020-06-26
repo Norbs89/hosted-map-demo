@@ -1,36 +1,20 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { artists } from "../artistData.js";
 import { Link } from "@reach/router";
 
 const ArtistCard = ({ artist }) => {
   return (
     <>
-      <Container className="artist-extra-info">
-        <Row className="justify-content-between">
+      <Container className="artist-info-container">
+        <Row className="">
           <Link to={`/${artist}/bio`}>
-            <button className="button artist-button">{artist}'s Bio</button>
+            {artists[artist].name},{" "}
+            <span className="from-city"> {artists[artist].city}</span>
           </Link>
-          <a
-            href={artists[artist].link}
-            className="button artist-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {artist}'s website
-          </a>
         </Row>
       </Container>
-      <section className="artist-info">
-        <Container className="artist-info-container">
-          <Row>
-            <Col>{artists[artist].name}</Col>
-          </Row>
-          <Row>
-            <Col className="from-city">{artists[artist].city}</Col>
-          </Row>
-        </Container>
-      </section>
+      <section className="artist-info"></section>
     </>
   );
 };
