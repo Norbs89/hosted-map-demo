@@ -12,7 +12,7 @@ const HomePage = () => {
           <div style={props}>
             <Container className="home-container">
               <Row className="home-header-row">
-                {/* project name here */}
+                {/*change project name here */}
                 <h1>Aesthetic chartreuse food truck</h1>
               </Row>
               <Row className="home-desc-row">

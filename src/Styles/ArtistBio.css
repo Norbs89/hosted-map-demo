@@ -4,6 +4,7 @@
   background-size: cover;
 }
 
+/* change background-color for overlay, color for text-color, add font family here */
 .bio-container {
   margin-top: 1em;
   max-width: 60%;
@@ -13,6 +14,7 @@
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+/* font size for header, keep it in em! font-weight either 400 or 700 */
 .artist-header-row {
   font-weight: 700;
   font-size: 10em;

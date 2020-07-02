@@ -7,6 +7,8 @@
   justify-content: center;
 }
 
+/* change background-color for overlay, color for text-color, add font family here */
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -35,6 +37,8 @@
   align-items: center;
 }
 
+/* add font-family here for button font change. This effects all buttons, not just the homepage */
+
 .button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -53,6 +57,7 @@
   display: inline-block;
   font-size: 1.1em;
   font-weight: 700;
+  /* letter-spacing and line-height can be deleted for a more dense button look */
   letter-spacing: 0.1em;
   line-height: 3.15em;
   padding: 0 1em;

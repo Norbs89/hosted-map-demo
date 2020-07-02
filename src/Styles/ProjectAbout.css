@@ -8,6 +8,7 @@
   padding-bottom: 1em;
 }
 
+/* change background-color for overlay, color for text-color, add font family here */
 .project-container {
   margin-top: 2em;
   padding-bottom: 1em;
@@ -17,6 +18,7 @@
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+/* font size for header, keep it in em! font-weight either 400 or 700 */
 .project-header {
   font-size: 10em;
   padding: 1rem 0;
@@ -32,7 +34,7 @@
 }
 
 .project-pic {
-  max-width: 80%;
+  max-width: 90%;
   margin: 1rem 0;
 }
 

@@ -4,15 +4,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import "../Styles/ContactForm.css";
 import { Spring } from "react-spring/renderprops";
-
-import axios from "axios";
+import instructions from "../Backgrounds/instructions.pdf";
 
 class Contact extends Component {
   state = {
     name: "",
     message: "",
     email: "",
-    formFile: "",
+    buttonText: "Submit Form",
     sent: false,
   };
 
@@ -34,6 +33,7 @@ class Contact extends Component {
                 </Row>
                 <Row className="col-row">
                   <Col className="instructions-col">
+                    {/* change the contact form description here */}
                     <article>
                       Kinfolk cornhole hoodie gluten-free. Forage +1 next level,
                       occupy narwhal selfies drinking vinegar deep v viral
@@ -49,7 +49,7 @@ class Contact extends Component {
                     </article>
                     <Row className="contact-button-row download">
                       <a
-                        href="https://github.com/conwayhub/markertests/raw/master/Markersheet.pdf"
+                        href={instructions}
                         className="button"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -96,7 +96,7 @@ class Contact extends Component {
                       </Form.Group>
                       <Row className="contact-button-row">
                         <button className="button" type="submit">
-                          Submit
+                          {this.state.buttonText}
                         </button>
                       </Row>
                     </Form>

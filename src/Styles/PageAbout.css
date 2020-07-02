@@ -7,6 +7,8 @@
 .about-outer-div {
   padding-bottom: 1em;
 }
+
+/* change background-color for overlay, color for text-color, add font family here */
 .about-container {
   margin-top: 2em;
   padding-bottom: 1em;
@@ -16,6 +18,7 @@
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+/* font size for header, keep it in em! font-weight either 400 or 700 */
 .about-header-row {
   padding: 1rem 0;
   font-size: 10em;
@@ -33,7 +36,6 @@
 }
 .icon {
   font-size: 2em;
-  color: #0b4f6c83;
   padding: 0 1em;
 }
 
@@ -46,7 +48,7 @@
 }
 
 .about-pic {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
 }
 

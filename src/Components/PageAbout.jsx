@@ -4,6 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import "../Styles/PageAbout.css";
 import { Spring } from "react-spring/renderprops";
+import aboutPic from "../Backgrounds/aboutpic.jpg";
 
 const PageAbout = () => {
   return (
@@ -17,6 +18,7 @@ const PageAbout = () => {
                 <h2>About The Project</h2>
               </Row>
               <Row className="about-row">
+                {/* change page about info here. If you'd like some spacing between paragraphs, use both <p> tags. Otherwise just delete one.*/}
                 <article>
                   <p>
                     I'm baby affogato helvetica beard distillery, pop-up
@@ -44,13 +46,11 @@ const PageAbout = () => {
                 </article>
               </Row>
               <Row className="about-pic-row">
-                <Image
-                  className="about-pic"
-                  src="http://placeimg.com/500/500/any"
-                  fluid
-                />
+                {/*add picture title here for accessibility in alt="" */}
+                <Image className="about-pic" src={aboutPic} fluid alt="" />
               </Row>
               <Row className="icon-row">
+                {/*change this link to your instagram, make sure the link is enclosed in " " */}
                 <a
                   href="https://instagram.com"
                   className="icon"
@@ -59,9 +59,12 @@ const PageAbout = () => {
                 >
                   <i class="fab fa-instagram"></i>
                 </a>
+                {/* enter your email address here, after mailto: */}
                 <a href="mailto:YOUR EMAIL HERE" className="icon">
                   <i class="fas fa-at"></i>
                 </a>
+                {/*change this link to your website, make sure the link is enclosed in " " */}
+
                 <a
                   href="https://linkedin.com"
                   className="icon"

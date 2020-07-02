@@ -1,3 +1,5 @@
+/* change font family here to universally set font family.
+ This would get overwritten in the page specific style sheets */
 .App {
   font-family: "Roboto", sans-serif;
 }
