@@ -4,10 +4,10 @@
   background-size: cover;
 }
 
-.about-container {
+.about-outer-div {
   padding-bottom: 1em;
 }
-.about-inner-container {
+.about-container {
   margin-top: 2em;
   padding-bottom: 1em;
   max-width: 60%;

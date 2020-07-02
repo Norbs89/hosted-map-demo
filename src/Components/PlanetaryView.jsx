@@ -5,12 +5,12 @@ import { Spring } from "react-spring/renderprops";
 
 const PlanetaryView = () => {
   return (
-    <>
+    <div className="planet-main-div">
       <DisplayNavbar />
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 200 }}>
         {(props) => (
           <div style={props}>
-            <div className="planet-main-div">
+            <div>
               <iframe
                 title="planet-map"
                 class="background-map planetary"
@@ -22,7 +22,7 @@ const PlanetaryView = () => {
           </div>
         )}
       </Spring>
-    </>
+    </div>
   );
 };
 

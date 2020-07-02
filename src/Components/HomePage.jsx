@@ -10,7 +10,7 @@ const HomePage = () => {
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
         {(props) => (
           <div style={props}>
-            <Container className="all-content">
+            <Container className="home-container">
               <Row className="home-header-row">
                 {/* project name here */}
                 <h1>Aesthetic chartreuse food truck</h1>

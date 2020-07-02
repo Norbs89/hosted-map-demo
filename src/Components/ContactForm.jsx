@@ -24,7 +24,7 @@ class Contact extends Component {
         <Spring
           from={{ opacity: 0 }}
           to={{ opacity: 1 }}
-          config={{ delay: 200 }}
+          config={{ delay: 100 }}
         >
           {(props) => (
             <div style={props} className="contact-outer-div">

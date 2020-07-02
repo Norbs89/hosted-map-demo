@@ -21,14 +21,17 @@ const PickCity = () => {
                     Pick a city to discover the works of our amazing local
                     artists!
                   </h2>
-                  <p> Or hit the 'start' button to go through all artists!</p>
+                  <p>
+                    Start{" "}
+                    <Link to={`/${artistArray[0]}`} className="start">
+                      here
+                    </Link>{" "}
+                    or select a city below!
+                  </p>
                 </Col>
               </Row>
               <Row>
                 <Col className="city-buttons">
-                  <Link to={`/${artistArray[0]}`}>
-                    <button className="button city-button">start</button>
-                  </Link>
                   {cities.map((city) => {
                     return (
                       <Link key={city} to={`/${findArtist(city)}`}>

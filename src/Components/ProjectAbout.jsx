@@ -22,20 +22,20 @@ const ProjectAbout = ({ artist, project }) => {
                 <Image
                   className="project-pic"
                   src={currentProject.pic1}
-                  thumbnail
                   fluid
+                  alt={currentProject.alt1}
                 />
                 <Image
                   className="project-pic"
                   src={currentProject.pic2}
-                  thumbnail
                   fluid
+                  alt={currentProject.alt2}
                 />
                 <Image
                   className="project-pic"
                   src={currentProject.pic3}
-                  thumbnail
                   fluid
+                  alt={currentProject.alt3}
                 />
                 {currentProject.video !== "" && (
                   <iframe

@@ -11,8 +11,8 @@ const PageAbout = () => {
       <DisplayNavbar />
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
         {(props) => (
-          <div style={props} className="about-container">
-            <Container className="about-inner-container">
+          <div style={props} className="about-outer-div">
+            <Container className="about-container">
               <Row className="about-header-row">
                 <h2>About The Project</h2>
               </Row>
@@ -43,15 +43,14 @@ const PageAbout = () => {
                   </p>
                 </article>
               </Row>
+              <Row className="about-pic-row">
+                <Image
+                  className="about-pic"
+                  src="http://placeimg.com/500/500/any"
+                  fluid
+                />
+              </Row>
               <Row className="icon-row">
-                <a
-                  href="https://facebook.com"
-                  className="icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-facebook-square"></i>
-                </a>
                 <a
                   href="https://instagram.com"
                   className="icon"
@@ -60,22 +59,17 @@ const PageAbout = () => {
                 >
                   <i class="fab fa-instagram"></i>
                 </a>
+                <a href="mailto:YOUR EMAIL HERE" className="icon">
+                  <i class="fas fa-at"></i>
+                </a>
                 <a
                   href="https://linkedin.com"
                   className="icon"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fas fa-desktop"></i>
                 </a>
-              </Row>
-              <Row className="about-pic-row">
-                <Image
-                  className="about-pic"
-                  src="http://placeimg.com/500/500/any"
-                  thumbnail
-                  fluid
-                />
               </Row>
             </Container>
           </div>

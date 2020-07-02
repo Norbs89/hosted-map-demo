@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.all-content {
+.home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,6 @@
   display: inline-block;
   font-size: 1.1em;
   font-weight: 700;
-  height: 2.7em;
   letter-spacing: 0.1em;
   line-height: 3.15em;
   padding: 0 1em;

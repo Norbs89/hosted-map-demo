@@ -13,3 +13,7 @@
 .next-button {
   display: none;
 }
+
+.planet-main-div .planet {
+  display: none;
+}

@@ -41,9 +41,15 @@ class DisplayNavbar extends React.Component {
     return (
       <Navbar bg="custom" variant="dark" sticky="top" expand="md">
         <NavDropdown title="Change View" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/globalmap">Planetary View</NavDropdown.Item>
-          <NavDropdown.Item href="/pickcity">Project View</NavDropdown.Item>
-          <NavDropdown.Item href="/contact">Your View</NavDropdown.Item>
+          <NavDropdown.Item className="planet" href="/globalmap">
+            Planetary View
+          </NavDropdown.Item>
+          <NavDropdown.Item className="project" href="/pickcity">
+            Project View
+          </NavDropdown.Item>
+          <NavDropdown.Item className="your" href="/contact">
+            Your View
+          </NavDropdown.Item>
         </NavDropdown>
         <Navbar.Text className="about-button">
           <Link to="/about" className="nav-text">

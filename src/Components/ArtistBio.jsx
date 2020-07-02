@@ -2,7 +2,6 @@ import React from "react";
 import { artists } from "../artistData.js";
 import DisplayNavbar from "./Navbar";
 import { Container, Row } from "react-bootstrap";
-import Image from "react-bootstrap/Image";
 import "../Styles/ArtistBio.css";
 import { Spring } from "react-spring/renderprops";
 

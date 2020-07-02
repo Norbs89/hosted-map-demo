@@ -6,7 +6,7 @@ import { Link } from "@reach/router";
 const ArtistCard = ({ artist }) => {
   return (
     <>
-      <Container className="artist-info-container">
+      <Container className="artist-container">
         <Row className="">
           <Link to={`/${artist}/bio`}>
             {artists[artist].name},{" "}
