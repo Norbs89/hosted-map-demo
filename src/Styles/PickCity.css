@@ -6,21 +6,28 @@
 }
 
 .city-page-content {
-  margin-top: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 1em;
 }
 
 /* change background-color for overlay, color for text-color, add font family here */
 .city-container {
-  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100vh;
   padding: 2em 2em;
   color: #e2ebf0;
   background-color: #171718dc;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.city-page-div .navbar {
+  position: fixed;
 }
 
 .start {
@@ -44,8 +51,7 @@
 @media (max-width: 600px) {
   .city-container {
     font-size: 0.8em;
-    max-width: 70%;
-    padding: 1em 0;
+    padding: 1em;
   }
 
   .city-container h2 {
@@ -59,8 +65,8 @@
   }
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .city-container {
     max-width: 80%;
   }
-}
+} */

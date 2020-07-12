@@ -12,19 +12,19 @@
 
 .artist-main-div {
   margin-left: 1em;
-  height: 90vh;
+  height: 85vh;
   max-width: 50%;
   float: left;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /* change background-color for overlay, add font family here */
 /* change font size here, keep it in em! font-weight either 400 or 700 */
 /* this is the max font size(3.2em) which displays on one row, anything bigger will go on 2 rows */
 .artist-container {
-  margin-bottom: 0.5em;
+  margin-top: auto;
   padding: 0 1em;
   font-size: 3.2em;
   background-color: #171718dc;

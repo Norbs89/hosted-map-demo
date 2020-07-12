@@ -14,7 +14,7 @@ const PlanetaryView = () => {
           class="background-map planetary"
           width="100%"
           height="100%"
-          src="https://maphub.net/embed/98251?button=0"
+          src="https://maphub.net/embed/100758?button=0&tablinks=1"
         ></iframe>
       </div>
     </div>

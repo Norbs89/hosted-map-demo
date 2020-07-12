@@ -11,7 +11,7 @@ const ArtistBio = ({ artist }) => {
       <DisplayNavbar />
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} config={{ delay: 100 }}>
         {(props) => (
-          <div style={props}>
+          <div style={props} className="bio-outer">
             <Container className="bio-container">
               <Row className="artist-header-row">
                 <h2>{artists[artist].name}'s Bio</h2>

@@ -17,3 +17,14 @@
 .planet-main-div .planet {
   display: none;
 }
+
+.planet-main-div {
+  max-width: 70%;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  .planet-main-div {
+    max-width: 100%;
+  }
+}

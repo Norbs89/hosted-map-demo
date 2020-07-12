@@ -9,10 +9,46 @@ import instructions from "../Backgrounds/instructions.pdf";
 class Contact extends Component {
   state = {
     name: "",
-    message: "",
     email: "",
+    picLink: "",
+    picDesc: "",
+    address: "",
+    comment: "",
     buttonText: "Submit Form",
-    sent: false,
+  };
+
+  handleInput = (field, value) => {
+    this.setState((currentState) => {
+      return {
+        ...currentState,
+        [field]: value,
+      };
+    });
+  };
+
+  formSubmit = (e) => {
+    e.preventDefault();
+
+    this.setState((currentState) => {
+      return {
+        ...currentState,
+        buttonText: "...sending",
+      };
+    });
+
+    this.resetForm();
+  };
+
+  resetForm = () => {
+    this.setState({
+      name: "",
+      email: "",
+      picLink: "",
+      picDesc: "",
+      address: "",
+      comment: "",
+      buttonText: "Form Submitted",
+    });
   };
 
   render() {
@@ -64,34 +100,94 @@ class Contact extends Component {
                       get featured as an artist on our website, please fill out
                       our contact form and we will get back to you soon!
                     </article>
-                    <Form className="contact-form">
+                    <Form
+                      className="contact-form"
+                      onSubmit={(e) => this.formSubmit(e)}
+                    >
                       <Form.Group controlId="formGroupName">
-                        <Form.Label>Name</Form.Label>
+                        <Form.Label>Name *</Form.Label>
                         <Form.Control
                           as="textarea"
                           rows="1"
                           placeholder="Enter your name here..."
+                          required
+                          value={this.state.name}
+                          onChange={(e) =>
+                            this.handleInput("name", e.target.value)
+                          }
                         />
                       </Form.Group>
                       <Form.Group controlId="formGroupEmail">
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>Email *</Form.Label>
                         <Form.Control
                           type="email"
                           placeholder="name@example.com"
+                          required
+                          value={this.state.email}
+                          onChange={(e) =>
+                            this.handleInput("email", e.target.value)
+                          }
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formGroupImg">
+                        <Form.Label>
+                          Share your file - please provide a link to your
+                          submission
+                        </Form.Label>
+                        <Form.Control
+                          as="textarea"
+                          rows="1"
+                          placeholder="https://example-link-to-your-picture.com"
+                          value={this.state.picLink}
+                          onChange={(e) =>
+                            this.handleInput("picLink", e.target.value)
+                          }
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formGroupAlt">
+                        <Form.Label>
+                          Visual description of upload for screen reading
+                          software
+                        </Form.Label>
+                        <Form.Control
+                          as="textarea"
+                          rows="1"
+                          placeholder="Enter your picture description here..."
+                          value={this.state.picDesc}
+                          onChange={(e) =>
+                            this.handleInput("picDesc", e.target.value)
+                          }
+                        />
+                      </Form.Group>
+                      <Form.Group controlId="formGroupAddress">
+                        <Form.Label>
+                          Location pin for your submission (no personal or
+                          private addresses) *
+                        </Form.Label>
+                        <Form.Control
+                          as="textarea"
+                          rows="2"
+                          placeholder="1 Example Address, 1AA 2BB"
+                          required
+                          value={this.state.address}
+                          onChange={(e) =>
+                            this.handleInput("address", e.target.value)
+                          }
                         />
                       </Form.Group>
                       <Form.Group controlId="formGroupMessage">
-                        <Form.Label>Message</Form.Label>
+                        <Form.Label>
+                          Any comments for us - these won't be published
+                          anywhere!
+                        </Form.Label>
                         <Form.Control
                           as="textarea"
-                          rows="4"
+                          rows="3"
                           placeholder="Enter your message here..."
-                        />
-                      </Form.Group>
-                      <Form.Group>
-                        <Form.File
-                          id="FormFile"
-                          label="Upload a JPEG picture here:"
+                          value={this.state.comment}
+                          onChange={(e) =>
+                            this.handleInput("comment", e.target.value)
+                          }
                         />
                       </Form.Group>
                       <Row className="contact-button-row">

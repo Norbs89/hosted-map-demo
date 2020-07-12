@@ -64,7 +64,6 @@ const PageAbout = () => {
                   <i class="fas fa-at"></i>
                 </a>
                 {/*change this link to your website, make sure the link is enclosed in " " */}
-
                 <a
                   href="https://linkedin.com"
                   className="icon"

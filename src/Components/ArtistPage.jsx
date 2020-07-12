@@ -7,8 +7,8 @@ import ArtistCard from "./ArtistCard";
 const ArtistPage = ({ artist }) => {
   return (
     <div className="artist-page">
-      <DisplayNavbar />
       <div className="artist-main-div">
+        <DisplayNavbar />
         <iframe
           title="planet-map"
           className="background-map"
