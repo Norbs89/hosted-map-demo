@@ -13,7 +13,7 @@ const HomePage = () => {
             <Container className="home-container">
               <Row className="home-header-row">
                 {/*change project name here */}
-                <h1>Aesthetic chartreuse food truck</h1>
+                <h1>Interactive Map Project Demo</h1>
               </Row>
               <Row className="home-desc-row">
                 {/* short project description here */}
